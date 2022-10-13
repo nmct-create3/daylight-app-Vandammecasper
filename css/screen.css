@@ -18,6 +18,10 @@
     /* transitions */
 }
 
+.is-night {
+    --color-front: var(--color-light);
+    --color-back: var(--color-dark);
+}
 /*------------------------------------*\
 #GENERIC
 \*------------------------------------*/
@@ -266,7 +270,7 @@ input::placeholder {
 .c-sun {
     width: 1.375rem;
     height: 1.375rem;
-    fill: var(--color-dark);
+    fill: var(--color-front);
 }
 
 .c-logo .c-sun {
@@ -366,10 +370,7 @@ input::placeholder {
 */
 
 /* Night version: just switch the light and dark vars */
-.is-night {
-    --color-front: var(--color-back);
-    --color-back: var(--color-front);
-}
+
 /*------------------------------------*\
 #MEDIA
 \*------------------------------------*/
